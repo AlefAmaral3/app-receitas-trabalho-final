@@ -1,12 +1,12 @@
 # App de Receitas - Trabalho Final
 
-## 📱 Sobre a Aplicação
+## Sobre a Aplicação
 
 Esta é uma aplicação Android desenvolvida em Kotlin com Jetpack Compose que permite aos utilizadores pesquisar, guardar, criar e gerir receitas culinárias. A aplicação integra-se com a API TheMealDB para obter receitas da internet e também permite criar receitas personalizadas localmente.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-### 1. **Ecrã Inicial (Home)**
+### 1. Ecrã Inicial (Home)
 - Visualização de todas as receitas guardadas localmente
 - Barra de pesquisa para filtrar receitas por nome
 - Contador de receitas guardadas
@@ -14,18 +14,18 @@ Esta é uma aplicação Android desenvolvida em Kotlin com Jetpack Compose que p
 - Opção de eliminar receitas criadas pelo utilizador
 - Clique em qualquer receita para ver detalhes completos
 
-### 2. **Ecrã de Pesquisa (Search)**
+### 2. Ecrã de Pesquisa (Search)
 - Pesquisa de receitas através da API TheMealDB
 - Resultados mostrados em tempo real
 - Possibilidade de marcar receitas como favoritas diretamente da pesquisa
 - Acesso aos detalhes de cada receita
 
-### 3. **Ecrã de Favoritos**
+### 3. Ecrã de Favoritos
 - Listagem de todas as receitas marcadas como favoritas
 - Acesso rápido às receitas preferidas do utilizador
 - Possibilidade de remover dos favoritos
 
-### 4. **Ecrã de Criar Receita**
+### 4. Ecrã de Criar Receita
 - Formulário para criar receitas personalizadas
 - Campos disponíveis:
   - Nome da receita
@@ -34,7 +34,7 @@ Esta é uma aplicação Android desenvolvida em Kotlin com Jetpack Compose que p
   - URL da imagem (opcional)
 - As receitas criadas são guardadas localmente na base de dados
 
-### 5. **Ecrã de Detalhes**
+### 5. Ecrã de Detalhes
 - Visualização completa da receita selecionada
 - Imagem da receita em destaque
 - Nome e categoria
@@ -44,7 +44,7 @@ Esta é uma aplicação Android desenvolvida em Kotlin com Jetpack Compose que p
   - **Editar**: permite editar receitas guardadas
   - **Voltar**: retorna ao ecrã anterior
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Kotlin**: Linguagem de programação
 - **Jetpack Compose**: Framework moderno para UI
@@ -55,7 +55,7 @@ Esta é uma aplicação Android desenvolvida em Kotlin com Jetpack Compose que p
 - **LiveData & ViewModel**: Arquitetura MVVM
 - **Coroutines**: Programação assíncrona
 
-## 🏗️ Arquitetura
+## Arquitetura
 
 O projeto segue o padrão MVVM (Model-View-ViewModel):
 
@@ -70,7 +70,7 @@ app/
 └── TheMealDbApi.kt         # Interface Retrofit para a API
 ```
 
-## 📊 Base de Dados
+## Base de Dados
 
 A aplicação utiliza Room Database com a seguinte estrutura:
 
@@ -84,7 +84,7 @@ A aplicação utiliza Room Database com a seguinte estrutura:
 - `e_favorito` (Boolean): Indicador se é favorita
 - `e_criado_pelo_utilizador` (Boolean): Indica se foi criada localmente
 
-## 🌐 API Externa
+## API Externa
 
 A aplicação integra-se com a **TheMealDB API** através do RapidAPI:
 - **Base URL**: https://themealdb.p.rapidapi.com/
@@ -94,7 +94,7 @@ A aplicação integra-se com a **TheMealDB API** através do RapidAPI:
 
 **Nota**: A chave da API está incluída no código fonte no ficheiro `TheMealDbApi.kt`.
 
-## 🚀 Como Executar
+## Como Executar
 
 ### Pré-requisitos
 - Android Studio (versão mais recente recomendada)
@@ -107,13 +107,13 @@ A aplicação integra-se com a **TheMealDB API** através do RapidAPI:
 3. Aguarde o Gradle sincronizar as dependências
 4. Execute a aplicação num dispositivo ou emulador Android
 
-## 📱 Requisitos do Sistema
+## Requisitos do Sistema
 
 - **Android SDK mínimo**: 24 (Android 7.0 Nougat)
 - **Android SDK alvo**: 36
 - **Versão da aplicação**: 1.0
 
-## 🎨 Interface do Utilizador
+## Interface do Utilizador
 
 A aplicação possui uma interface moderna e intuitiva com:
 - Navegação por tabs na parte inferior (Bottom Navigation)
@@ -121,7 +121,7 @@ A aplicação possui uma interface moderna e intuitiva com:
 - Design responsivo seguindo Material Design 3
 - Suporte a tema escuro/claro (automático conforme sistema)
 
-## ⚙️ Como Funciona
+## Como Funciona
 
 1. **Pesquisa de Receitas**: O utilizador pode pesquisar receitas na tab "Procurar". As receitas são obtidas em tempo real da API TheMealDB.
 
@@ -133,11 +133,11 @@ A aplicação possui uma interface moderna e intuitiva com:
 
 5. **Editar/Eliminar**: Receitas guardadas localmente podem ser editadas ou eliminadas.
 
-## 🔒 Credenciais
+## Credenciais
 
 **Não são necessárias credenciais de utilizador.** A aplicação funciona de forma autónoma sem sistema de autenticação ou login.
 
-## ⚠️ Limitações e Problemas Conhecidos
+## Limitações e Problemas Conhecidos
 
 ### Limitações
 1. **Dependência da Internet**: A funcionalidade de pesquisa requer conexão à internet para aceder à API.
@@ -163,7 +163,7 @@ A aplicação possui uma interface moderna e intuitiva com:
 
 4. **Sem Modo Offline Completo**: Receitas da API não são cacheadas automaticamente.
 
-## 📝 Melhorias Futuras
+## Melhorias Futuras
 
 - Sistema de categorias personalizadas
 - Exportação/importação de receitas
@@ -173,7 +173,7 @@ A aplicação possui uma interface moderna e intuitiva com:
 - Lista de compras baseada em receitas
 - Pesquisa avançada com filtros
 
-## 👨‍💻 Desenvolvimento
+## Desenvolvimento
 
 Este projeto foi desenvolvido como trabalho final utilizando as melhores práticas de desenvolvimento Android moderno, incluindo:
 - Arquitetura MVVM para separação de responsabilidades
